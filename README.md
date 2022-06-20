@@ -4,10 +4,11 @@ Physiologix
 ### Setup
 
 To start using this theme:
-* Make sure you have Node.js and NPM installed
-* Clone the respository to your wp-content folder
-* Open your terminal/code editor in the root theme folder
-* Run `npm install`
+
+- Make sure you have Node.js and NPM installed
+- Clone the respository to your wp-content folder
+- Open your terminal/code editor in the root theme folder
+- Run `npm install`
 
 ### Available CLI commands
 
