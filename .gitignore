@@ -1,0 +1,13 @@
+# Node
+node_modules/
+dist/
+
+# Bundler
+.parcel-cache
+
+# Log files
+*.log
+
+# OS generated
+.DS_Store
+Thumbs.db

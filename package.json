@@ -1,0 +1,17 @@
+{
+  "name": "physiologix",
+  "version": "1.0.0",
+  "description": "A custom theme for the Physiologix.ie website",
+  "scripts": {
+    "clean": "rm -r dist/",
+    "start": "parcel watch src/index.js --no-source-maps",
+    "build": "parcel build src/index.js --no-source-maps" 
+  },
+  "author": "David Matthew",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.6.1",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.3"
+  }
+}
