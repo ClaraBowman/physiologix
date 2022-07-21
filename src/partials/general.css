@@ -1,0 +1,78 @@
+:root {
+    --px-red: #ea1a2d;
+    --px-dark: #192847;
+}
+
+.px-red {
+    color: var(--px-red);
+}
+
+.bg-px-red {
+    background-color: var(--px-red);
+}
+
+.px-dark {
+    color: var(--px-dark);
+}
+
+.bg-px-dark {
+    background-color: var(--px-dark);
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 0.05rem;
+}
+
+body.modal-open {
+    overflow: auto !important;
+}
+
+.site {
+    padding-top: 6.625rem;
+    transition: padding 0.4s;
+}
+
+.block {
+    padding: 4rem 0;
+}
+
+a .fa-angle-down {
+    transition: transform 0.3s;
+}
+
+a:hover .fa-angle-down {
+    transform: translateY(3px);
+}
+
+.btn-px-red {
+    border: 3px solid var(--px-red);
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.btn-px-red:hover {
+    background-color: var(--px-red);
+    color: #fff;
+}
+
+#btn-search-desktop {
+    letter-spacing: 0.125rem;
+    font-weight: 600;
+}
+
+.site-footer {
+    border-top: 0.4rem solid var(--px-red);
+}
+
+@media (min-width: 576px) {
+    .site {
+        padding-top: 7.5rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .site {
+        padding-top: 8.225rem;
+    }
+}

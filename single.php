@@ -2,15 +2,13 @@
 /**
  * The template for displaying all single posts
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
- *
  * @package Physiologix
  */
 
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
+	<main id="primary" class="site-main container pt-5">
 
 		<?php
 		while ( have_posts() ) :

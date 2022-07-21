@@ -1,17 +1,29 @@
 {
   "name": "physiologix",
   "version": "1.0.0",
-  "description": "A custom theme for the Physiologix.ie website",
+  "description": "A custom theme for the Physiologix website.",
   "scripts": {
     "clean": "rm -r dist/",
     "start": "parcel watch src/index.js --no-source-maps",
-    "build": "parcel build src/index.js --no-source-maps" 
+    "build": "parcel build src/index.js --no-source-maps"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/fleming-medical/physiologix.git"
   },
   "author": "David Matthew",
   "license": "ISC",
+  "bugs": {
+    "url": "https://bitbucket.org/fleming-medical/physiologix/issues"
+  },
+  "homepage": "https://bitbucket.org/fleming-medical/physiologix#readme",
+  "devDependencies": {
+    "parcel": "^2.6.2"
+  },
   "dependencies": {
-    "parcel": "^2.6.1",
-    "postcss": "^8.4.14",
-    "tailwindcss": "^3.1.3"
+    "@fortawesome/fontawesome-free": "^6.1.1",
+    "@popperjs/core": "^2.11.5",
+    "aos": "^2.3.4",
+    "bootstrap": "^5.1.3"
   }
 }
