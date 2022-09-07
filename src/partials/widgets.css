@@ -1,0 +1,33 @@
+.widget-area {
+    min-width: 260px;
+}
+
+.widget-area + .site-main {
+    flex-basis: 100%;
+}
+
+.widget-area h3 {
+    font-size: 1.1rem;
+}
+
+.widget-area .wc-block-product-categories-list--depth-0 {
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+.widget-area .wc-block-product-categories-list a {
+    text-decoration: none;
+}
+
+.widget-area .wc-block-product-categories-list--depth-1 {
+    list-style-type: none;
+}
+
+.widget-area .wc-block-product-categories-list--depth-1 li::before {
+    content: "\00BB";
+    color: var(--px-red);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}

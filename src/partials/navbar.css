@@ -1,12 +1,12 @@
 .navbar {
     background-color: var(--px-dark);
     border-bottom: 0.4rem solid var(--px-red);
-    padding: 25px 0;
+    padding: 1.2rem 0;
     transition: all 0.4s;
 }
 
 .navbar-brand img:nth-child(1) {
-    max-width: 450px;
+    max-width: 410px;
 }
 
 .navbar-brand img:nth-child(2) {
@@ -21,15 +21,15 @@
     padding: 0.5rem 0.8rem 0.5rem 0.4rem;
     text-decoration: none;
     letter-spacing: 0.125rem;
-    color: #fff;
-    transition: color 0.4s;
     font-family: 'Raleway';
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 0.9rem;
+    color: #fff;
+    transition: color 0.4s;
 }
 
 .nav-item a:hover {
-    color: #01b7f8;
+    color: #33b1e9;
 }
 
 .menu-item-has-children {
@@ -42,6 +42,9 @@
     margin-left: -0.5rem;
     transform: translateY(-2px);
     transition: transform 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .menu-item-has-children:hover::after {
@@ -51,6 +54,10 @@
 .nav-item .sub-menu {
     display: none;
     position: relative;
+}
+
+.nav-item .sub-menu a {
+    line-height: 1.2rem;
 }
 
 .nav-item:hover .sub-menu {
@@ -101,6 +108,12 @@
     transform-origin: 0% 0%;
 }
 
+.modal .aws-container .aws-search-field {
+    padding: 6px 12px;
+    line-height: 30px;
+    font-size: 1.25rem;
+}
+
 @media (min-width: 576px) {
     .navbar-toggler .toggler-icon {
         height: 4px;
@@ -137,5 +150,10 @@
 
     .nav-item:hover .sub-menu {
         display: flex; 
+    }
+
+    .menu-item-has-children::after {
+        top: 0.6rem;
+        right: -2px;
     }
 }

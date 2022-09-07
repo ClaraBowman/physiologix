@@ -1,0 +1,82 @@
+.px-range-slider .bg-range {
+    z-index: -1;
+    height: 2rem;
+    width: 75%;
+    left: 50%;
+    top: 2rem;
+    transform: translate(-50%);
+    background-color: #d0d1cd;
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+}
+
+.px-range-slider a img:first-child {
+    height: 65px;
+}
+
+.px-range-slider a img:first-child,
+.px-range-slider a img:last-child {
+    transition: transform 0.3s;
+}
+
+.px-range-slider a:hover img:first-child {
+    transform: translateY(-0.5rem);
+}
+
+.px-range-slider a:hover img:last-child {
+    transform: scale(1.1);
+}
+
+.injury-link img {
+    transition: transform 0.3s;
+}
+
+.injury-link:hover img {
+    transform: translateY(-5px);
+}
+
+.injury-link h3 {
+    transition: background-color 0.3s;
+}
+
+.injury-link:hover h3 {
+    background-color: #c91423;
+}
+
+.injury-location {
+    width: 30px;
+    height: 30px;
+}
+  
+.injury-location,
+.injury-location:before,
+.injury-location:after {
+    opacity: 0.8;
+    border-radius: 50%;
+    z-index: 1;
+}
+  
+.injury-location:before,
+.injury-location:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0; 
+    right: 0; 
+    bottom: 0; 
+    left: 0;
+    border: 1px solid var(--px-red);
+}
+  
+.injury-location:before {
+    animation: injury-location-ripple 2s linear infinite;
+}
+
+.injury-location:after {
+    animation: injury-location-ripple 2s linear 1s infinite;
+}
+
+@keyframes injury-location-ripple {
+    0% { transform: scale(1); }
+    50% { transform: scale(3); opacity:0.8; }
+    100% { transform: scale(5); opacity:0; }
+}

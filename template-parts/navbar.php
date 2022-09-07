@@ -34,7 +34,7 @@
                     'theme_location' => 'primary',
                     'menu_id'        => 'primary-menu',
                     'menu_class'     => 'navbar-nav mt-4 mt-xl-0',
-                    'li_class'       => 'nav-item text-white position-relative text-uppercase d-block d-xl-flex my-2 my-xl-0 justify-content-center align-items-center'
+                    'li_class'       => 'nav-item text-white position-relative text-uppercase d-block d-xl-flex my-3 my-xl-0 justify-content-center align-items-center'
                 )
             );
 

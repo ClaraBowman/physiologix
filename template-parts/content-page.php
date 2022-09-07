@@ -9,24 +9,24 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> data-aos="fade-up">
 	
-	<header class="entry-header" data-aos="fade-right">
+	<header class="entry-header">
 		
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php the_title( '<h1 class="entry-title mb-5">', '</h1>' ); ?>
 	
 	</header><!-- .entry-header -->
 
-	<div class="entry-content" data-aos="fade-up">
+	<div class="entry-content">
 		<?php
 		the_content();
 
-		wp_link_pages(
-			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'physiologix' ),
-				'after'  => '</div>',
-			)
-		);
+		// wp_link_pages(
+		// 	array(
+		// 		'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'physiologix' ),
+		// 		'after'  => '</div>',
+		// 	)
+		// );
 		?>
 	</div><!-- .entry-content -->
 

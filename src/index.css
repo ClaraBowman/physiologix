@@ -6,4 +6,6 @@
 @import './partials/general.css';
 @import './partials/navbar.css';
 @import './partials/footer.css';
+@import './partials/shortcodes.css';
+@import './partials/widgets.css';
 @import './partials/woocommerce.css';

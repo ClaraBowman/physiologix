@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="30.191998"
+   height="43.823997"
+   viewBox="0 0 7.9882992 11.5951"
+   version="1.1"
+   id="svg5"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title
+     id="title1658">Icon Essential Range</title>
+  <defs
+     id="defs2">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath178">
+      <path
+         d="M 0,0 H 595.276 V 841.89 H 0 Z"
+         id="path176" />
+    </clipPath>
+  </defs>
+  <g
+     id="layer1"
+     transform="translate(-117.22929,-65.531028)">
+    <g
+       id="g172"
+       transform="matrix(0.35277776,0,0,-0.35277776,85.528149,292.20492)">
+      <g
+         id="g174"
+         clip-path="url(#clipPath178)">
+        <g
+           id="g180"
+           transform="translate(101.1845,642.0245)">
+          <path
+             d="m 0,0 c -5.958,0 -10.807,-4.847 -10.807,-10.804 0,-2.394 1.411,-6.036 4.436,-11.458 2.067,-3.701 4.122,-6.827 4.209,-6.958 l 1.486,-2.252 c 0.149,-0.228 0.403,-0.364 0.676,-0.364 0.271,0 0.525,0.136 0.674,0.364 l 1.486,2.252 c 0.087,0.13 2.126,3.229 4.209,6.958 3.025,5.422 4.436,9.064 4.436,11.458 C 10.805,-4.847 5.957,0 0,0"
+             style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path182" />
+        </g>
+        <g
+           id="g184"
+           transform="translate(101.1845,642.5402)">
+          <path
+             d="m 0,0 c -6.244,-0.001 -11.322,-5.077 -11.323,-11.32 0.013,-2.59 1.467,-6.254 4.502,-11.709 2.078,-3.721 4.135,-6.851 4.23,-6.993 l -0.002,0.002 1.486,-2.252 c 0.244,-0.373 0.661,-0.596 1.107,-0.596 0.445,0 0.861,0.224 1.106,0.598 l 1.485,2.25 -0.003,-0.003 c 0.097,0.144 2.137,3.244 4.231,6.994 3.034,5.455 4.489,9.119 4.502,11.709 C 11.32,-5.077 6.243,-0.001 0,0 v -1.031 c 2.837,-0.001 5.407,-1.153 7.272,-3.017 1.864,-1.865 3.017,-4.434 3.017,-7.272 0.013,-2.196 -1.355,-5.817 -4.371,-11.207 -2.07,-3.708 -4.108,-6.805 -4.186,-6.921 L 0.244,-31.704 0,-31.836 l -0.245,0.13 -1.487,2.254 -0.001,0.002 c -0.08,0.12 -2.132,3.243 -4.188,6.923 -3.015,5.39 -4.383,9.011 -4.37,11.207 0,2.838 1.153,5.407 3.018,7.272 1.865,1.864 4.435,3.016 7.273,3.017 z"
+             style="fill:#192948;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path186" />
+        </g>
+        <g
+           id="g188"
+           transform="translate(106.1394,620.5511)">
+          <path
+             d="m 0,0 c -2.052,-3.676 -4.062,-6.726 -4.146,-6.854 l -0.809,-1.229 -0.811,1.229 c -0.086,0.128 -2.11,3.205 -4.146,6.854 -2.807,5.031 -4.229,8.621 -4.229,10.669 0,5.065 4.121,9.187 9.186,9.187 5.064,0 9.184,-4.122 9.184,-9.187 C 4.229,8.621 2.807,5.031 0,0"
+             style="fill:#ed1738;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path190" />
+        </g>
+      </g>
+    </g>
+    <path
+       d="m 120.99328,68.441441 -0.77011,0.677333 -0.46037,-0.531283 1.25165,-1.056569 h 0.75883 v 3.837163 h -0.78 z"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352778"
+       id="path194" />
+  </g>
+  <metadata
+     id="metadata1656">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Icon Essential Range</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

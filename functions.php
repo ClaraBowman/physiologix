@@ -30,8 +30,15 @@ add_action( 'wp_enqueue_scripts', function() {
  */
 add_action( 'after_setup_theme', function() {
     
+    add_theme_support( 'customize-selective-refresh-widgets' );
     add_theme_support( 'title-tag' );
     add_theme_support( 'post-thumbnails' );
+
+    // WooCommerce support.
+    add_theme_support( 'woocommerce' );
+    add_theme_support( 'wc-product-gallery-zoom' );
+    add_theme_support( 'wc-product-gallery-lightbox' );
+    add_theme_support( 'wc-product-gallery-slider' );
 
     add_theme_support(
         'html5',
@@ -86,3 +93,37 @@ add_filter('nav_menu_css_class', function( $classes, $item, $args ) {
  * Completely hide the admin bar from the front-end.
  */
 add_filter('show_admin_bar', '__return_false');
+
+/** 
+ * Add our theme shortcodes.
+ */
+require 'shortcodes.php';
+
+/**
+ * Remove the injected WooCommerce sidebar and add it later ourselves.
+ */
+remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10); 
+
+/** 
+ * Remove the default WooCommerce content wrappers.
+ */
+remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
+remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
+
+/** 
+ * Replace the above with our own wrappers.
+ */
+add_action('woocommerce_before_main_content', function() {
+    ?>
+    <div class="container d-flex py-5">
+        <?php if (!is_product()) get_sidebar(); ?>
+        <main class="site-main" data-aos="fade-up">
+    <?php
+}, 10);
+
+add_action('woocommerce_after_main_content', function() {
+    ?>
+        </main><!-- .site-main -->
+    </div><!-- .container -->
+    <?php
+}, 10);
