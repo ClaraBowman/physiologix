@@ -6,8 +6,6 @@ Requires PHP: 7.0
 Stable tag: 1.0.0
 License: GNU General Public License v2 or later
 
-A starter theme called Physiologix.
-
 == Description ==
 
 A custom theme for the Physiologix website.

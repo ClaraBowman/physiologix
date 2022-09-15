@@ -95,6 +95,7 @@
 }
 
 .woocommerce .product p.price,
+.woocommerce a.add_to_cart_button,
 .woocommerce .product p.stock,
 .woocommerce .product span.price,
 .woocommerce ul.products li.product .price,
