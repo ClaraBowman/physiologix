@@ -11,14 +11,11 @@
  */
 add_action( 'wp_enqueue_scripts', function() {
 
-    // Load our Google font.
-    wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css2?family=Raleway:wght@400;500,700&display=swap', array(), '1.0' );
-
     // Load our custom CSS.
-    wp_enqueue_style( 'parcel', get_stylesheet_directory_uri() . '/dist/index.css', array(), '1.0' );
+    wp_enqueue_style( 'parcel', get_stylesheet_directory_uri() . '/dist/index.css', array(), wp_get_theme()->get( 'Version' ) );
 
     // Load our custom scripts.
-    wp_enqueue_script( 'parcel', get_stylesheet_directory_uri() . '/dist/index.js', array(), '1.0', true );
+    wp_enqueue_script( 'parcel', get_stylesheet_directory_uri() . '/dist/index.js', array(), wp_get_theme()->get( 'Version' ), true );
 
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
         wp_enqueue_script( 'comment-reply' );

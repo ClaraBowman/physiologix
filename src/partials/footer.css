@@ -1,5 +1,5 @@
 .site-footer {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     text-align: center;
 }
 
@@ -7,7 +7,7 @@
     text-decoration: none;
     color: #fff;
     text-decoration: none;
-    transition: color 0.4s;
+    transition: color 0.3s;
 }
 
 .site-footer li a:hover {
@@ -16,7 +16,6 @@
 
 @media (min-width: 992px) {
     .site-footer {
-        font-size: 0.85rem;
         text-align: left;
     }
 }

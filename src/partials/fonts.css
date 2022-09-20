@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Metropolis';
+    src: url('../../assets/metropolis-regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    src: url('../../assets/metropolis-regular-italic.woff2') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    src: url('../../assets/metropolis-semibold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}

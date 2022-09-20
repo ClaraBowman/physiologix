@@ -38,7 +38,7 @@
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Metropolis', sans-serif;
     letter-spacing: 0.05rem;
 }
 
@@ -60,11 +60,11 @@ body.modal-open {
     position: absolute;
 }
 
-a .fa-angle-down {
+.btn .fa-angle-down {
     transition: transform 0.3s;
 }
 
-a:hover .fa-angle-down {
+.btn:hover .fa-angle-down {
     transform: translateY(3px);
 }
 

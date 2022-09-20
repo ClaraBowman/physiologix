@@ -3,9 +3,11 @@
 @import '../node_modules/@fortawesome/fontawesome-free/css/fontawesome.css';
 @import '../node_modules/@fortawesome/fontawesome-free/css/brands.css';
 @import '../node_modules/@fortawesome/fontawesome-free/css/solid.css';
+@import './partials/fonts.css';
 @import './partials/general.css';
 @import './partials/navbar.css';
 @import './partials/footer.css';
 @import './partials/shortcodes.css';
 @import './partials/widgets.css';
 @import './partials/woocommerce.css';
+@import './partials/wp-lightbox.css';

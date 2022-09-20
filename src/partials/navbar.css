@@ -20,12 +20,11 @@
 .nav-item a {
     padding: 0.5rem 0.8rem 0.5rem 0.4rem;
     text-decoration: none;
-    letter-spacing: 0.125rem;
-    font-family: 'Raleway';
-    font-weight: 600;
-    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+    font-family: 'Metropolis', sans-serif;
     color: #fff;
-    transition: color 0.4s;
+    font-size: 0.95rem;
+    transition: color 0.3s;
 }
 
 .nav-item a:hover {
