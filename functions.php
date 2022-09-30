@@ -5,7 +5,6 @@
  * @package Physiologix
  */
 
-
 /**
  * Enqueue scripts and styles.
  */
@@ -74,6 +73,18 @@ add_action( 'widgets_init', function() {
             'after_title'   => '</h2>',
         )
     );
+
+    register_sidebar(
+        array(
+            'name'          => esc_html__( 'Blog Sidebar', 'physiologix' ),
+            'id'            => 'sidebar-blog',
+            'description'   => esc_html__( 'Add widgets here.', 'physiologix' ),
+            'before_widget' => '<section id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</section>',
+            'before_title'  => '<h2 class="widget-title">',
+            'after_title'   => '</h2>',
+        )
+    );
 } );
 
 /**
@@ -99,13 +110,13 @@ require 'shortcodes.php';
 /**
  * Remove the injected WooCommerce sidebar and add it later ourselves.
  */
-remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10); 
+remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 ); 
 
 /** 
  * Remove the default WooCommerce content wrappers.
  */
-remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
-remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
+remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10 );
+remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10 );
 
 /** 
  * Replace the above with our own wrappers.
@@ -113,14 +124,83 @@ remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wra
 add_action('woocommerce_before_main_content', function() {
     ?>
     <div class="container d-flex py-5">
-        <?php if (!is_product()) get_sidebar(); ?>
+        
+        <?php if ( ! is_product() ) get_sidebar(); ?>
+        
         <main class="site-main" data-aos="fade-up">
+
     <?php
-}, 10);
+}, 10 );
 
 add_action('woocommerce_after_main_content', function() {
     ?>
         </main><!-- .site-main -->
+    
     </div><!-- .container -->
+    
     <?php
-}, 10);
+}, 10 );
+
+/**
+ * Add a link to the relevant product page(s) on the main Fleming site.
+ */
+add_action( 'woocommerce_after_add_to_cart_form', function( ) {
+
+    // Get the global product object.
+    global $product;
+    
+    // Get the array of variation IDs.
+    $variations = $product->get_children();
+
+    // Construct the base url.
+    $fm_url = 'https://www.flemingmedical.ie/';
+
+    // If there are no variations, add the main SKU. Otherwise fetch the SKUs from the variations.
+    if ( empty( $variations ) ) {
+
+        // Set the URL path to the SKU, which will find it on the main fleming site.
+        $fm_url .= $product->get_sku();
+
+        // Add tracking analytics parameters to the end of the URL.
+        $fm_url .= '?utm_source=physiologix&utm_medium=backlink&utm_campaign=new-px-site';
+
+    } else {
+
+        $fm_url .= 'search?q=';
+
+        foreach ( $variations as $variation ) {
+            
+            // Get the product by the variation id.
+            $p = wc_get_product( $variation );
+
+            // Add the variation SKU to the search query.
+            $fm_url .= $p->get_sku() . '+';
+
+        }
+
+        // Append tracking analytics with & instead of ?.
+        $fm_url .= '&utm_source=physiologix&utm_medium=backlink&utm_campaign=new-px-site';
+    }
+
+    
+
+    ?>
+    
+    <div class="mb-4">
+
+        <p><?php _e( 'Are you a <span class="fw-bold">business or other retailer</span>?', 'physiologix' ); ?></p>
+
+        <a href="<?php echo esc_url( $fm_url ); ?>" target="_blank" class="btn btn-light border">
+
+            <i class="fa-solid fa-cart-plus me-1"></i>
+
+            <?php _e( 'Buy here at trade price', 'physiologix' ); ?>
+            
+            <i class="fa-solid fa-arrow-up-right-from-square ms-1"></i>
+
+        </a>  
+
+    </div>
+
+    <?php
+});
