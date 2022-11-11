@@ -10,14 +10,18 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main container">
+	<main id="primary" class="site-main container py-5">
 
 		<section class="error-404 not-found">
+			
 			<header class="page-header">
+				
 				<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'physiologix' ); ?></h1>
-			</header><!-- .page-header -->
+			
+			</header>
 
 			<div class="page-content">
+
 				<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'physiologix' ); ?></p>
 
 					<?php
@@ -27,6 +31,7 @@ get_header();
 					?>
 
 					<div class="widget widget_categories">
+
 						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'physiologix' ); ?></h2>
 						<ul>
 							<?php
@@ -52,6 +57,7 @@ get_header();
 					?>
 
 			</div><!-- .page-content -->
+		
 		</section><!-- .error-404 -->
 
 	</main><!-- #main -->

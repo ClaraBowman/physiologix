@@ -104,3 +104,14 @@
 .woocommerce .product button.single_add_to_cart_button {
     display: none;
 }
+
+.woocommerce-breadcrumb {
+    margin: 0 0 1em;
+    padding: 0;
+    font-size: .92em;
+}
+
+.woocommerce-breadcrumb,
+.woocommerce-breadcrumb a {
+    color: #767676;
+}

@@ -10,24 +10,31 @@
     font-size: 1.1rem;
 }
 
+.widget_recent_entries ul li {
+    margin-bottom: 0.5em;
+}
+
 .widget-area .wc-block-product-categories-list--depth-0 {
     list-style: none;
     padding-inline-start: 0;
 }
 
+.widget ul li a,
 .widget-area .wc-block-product-categories-list a {
     text-decoration: none;
 }
 
+.widget ul,
 .widget-area .wc-block-product-categories-list--depth-1 {
-    list-style-type: none;
+    list-style: none;
 }
 
+.single-post .widget ul li::before,
 .widget-area .wc-block-product-categories-list--depth-1 li::before {
     content: "\00BB";
     color: var(--px-red);
     font-weight: bold;
     display: inline-block;
     width: 1em;
-    margin-left: -1em;
+    margin-left: -1.25em;
 }

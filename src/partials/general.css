@@ -60,6 +60,40 @@ body.modal-open {
     position: absolute;
 }
 
+.wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-img,
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s;
+}
+
+.bg-img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.overlay {
+    background-color: black;
+    opacity: 0;
+    z-index: 10;
+    top: 0;   
+}
+
+.wrap:hover .overlay {
+    opacity: 0.4;
+}
+
+.wrap:hover .bg-img {
+    transform: scale(1.1);
+}
+
 .btn .fa-angle-down {
     transition: transform 0.3s;
 }
@@ -88,11 +122,49 @@ body.modal-open {
     border-top: 0.4rem solid var(--px-red);
 }
 
+.category h1:after,
+.single-post h1:after {
+    content: '';
+    width: 50px;
+    height: 5px;
+    margin-top: 1rem;
+    background: var(--px-red);
+    display: block;
+}
+
+.post-meta {
+    color: var(--bs-gray);
+}
+
+.post-meta .date {
+    letter-spacing: 0;
+}
+
 .gmap-embed {
     border: 5px solid #ea1a2d8c;
     border-left-color: var(--px-red);
     width: 100%;
     height: 500px;
+}
+
+.wp-block-image img {
+    border-radius: 3px !important;
+}
+
+.wp-block-image figcaption {
+    color: var(--bs-gray);
+    text-align: center;
+    font-size: 0.85em;
+}
+
+.content-preview .btn {
+    opacity: 0;
+    margin: 0 auto;
+}
+
+.content-preview .wrap:hover .btn {
+    opacity: 0.9;
+    transform: translateY(-30px);
 }
 
 @media (min-width: 576px) {

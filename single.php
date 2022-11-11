@@ -8,18 +8,40 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main container py-5">
+<div class="container py-5">
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
+	<?php 
+	
+	if ( class_exists( 'woocommerce' ) ) {
+		woocommerce_breadcrumb();
+	}
+	
+	?>
 
-			get_template_part( 'template-parts/content', get_post_type() );
+	<div class="row">
 
-		endwhile; // End of the loop.
-		?>
+		<main id="primary" class="site-main col-12 col-lg-9 py-5">
 
-	</main><!-- #main -->
+			<?php
+			while ( have_posts() ) :
+				the_post();
+
+				get_template_part( 'template-parts/content', get_post_type() );
+
+			endwhile;
+			?>
+
+		</main>
+
+		<aside class="col-12 col-lg-3 py-5" data-aos="fade-up">
+
+			<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
+			
+		</aside>
+
+	</div><!-- /.row -->
+
+</div><!-- /.container -->
 
 <?php
 get_footer();

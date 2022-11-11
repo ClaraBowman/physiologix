@@ -182,8 +182,6 @@ add_action( 'woocommerce_after_add_to_cart_form', function( ) {
         $fm_url .= '&utm_source=physiologix&utm_medium=backlink&utm_campaign=new-px-site';
     }
 
-    
-
     ?>
     
     <div class="mb-4">
@@ -203,4 +201,14 @@ add_action( 'woocommerce_after_add_to_cart_form', function( ) {
     </div>
 
     <?php
+});
+
+/**
+ * Modify the archive title (removing 'Category' prefix)
+ */
+add_filter( 'get_the_archive_title', function ( $title ) {
+    if ( is_category() ) {
+        $title = single_cat_title( '', false );
+    }
+    return $title;
 });
