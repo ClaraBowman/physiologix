@@ -9,14 +9,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/fleming-medical/physiologix.git"
+    "url": "git+ssh://git@github.com:fleming-medical/physiologix.git"
   },
   "author": "David Matthew",
   "license": "ISC",
-  "bugs": {
-    "url": "https://bitbucket.org/fleming-medical/physiologix/issues"
-  },
-  "homepage": "https://bitbucket.org/fleming-medical/physiologix#readme",
+  "homepage": "https://github.com/fleming-medical/physiologix",
   "devDependencies": {
     "parcel": "^2.6.2"
   },
