@@ -1,0 +1,7 @@
+.single-post .container {
+    max-width: 1024px;
+}
+
+.single-post main a {
+    text-decoration: none;
+}

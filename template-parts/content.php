@@ -13,7 +13,7 @@
 
 		<?php
 		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title mb-5" data-aos="fade-right">', '</h1>' );
+			the_title( '<h1 class="entry-title mb-4" data-aos="fade-right">', '</h1>' );
 		else :
 			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
@@ -27,7 +27,7 @@
 
 		?>
 		
-		<div class="post-meta mb-2" data-aos="fade-left">
+		<div class="post-meta mb-3" data-aos="fade-left">
 
 			<span class="date"><i class="fas fa-calendar-alt me-2"></i><?php echo esc_html( $date_string ); ?></span>
 

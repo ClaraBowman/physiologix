@@ -20,7 +20,7 @@ get_header();
 
 	<div class="row">
 
-		<main id="primary" class="site-main col-12 col-lg-9 py-5">
+		<main id="primary" class="site-main col-12 col-md-9 col-lg-8 py-5">
 
 			<?php
 			while ( have_posts() ) :
@@ -33,7 +33,7 @@ get_header();
 
 		</main>
 
-		<aside class="col-12 col-lg-3 py-5" data-aos="fade-up">
+		<aside class="col-12 col-md-3 col-lg-4 py-5" data-aos="fade-up">
 
 			<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
 			
