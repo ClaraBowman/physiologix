@@ -19,18 +19,13 @@ get_header();
 					printf( esc_html__( 'Search Results for: %s', 'physiologix' ), '<span>' . get_search_query() . '</span>' );
 					?>
 				</h1>
-			</header><!-- .page-header -->
+			</header>
 
 			<?php
-			/* Start the Loop */
+		
 			while ( have_posts() ) :
-				the_post();
 
-				/**
-				 * Run the loop for the search to output the results.
-				 * If you want to overload this in a child theme then include a file
-				 * called content-search.php and that will be used instead.
-				 */
+				the_post();
 				get_template_part( 'template-parts/content', 'search' );
 
 			endwhile;
@@ -44,7 +39,7 @@ get_header();
 		endif;
 		?>
 
-	</main><!-- #main -->
+	</main>
 
 <?php
 get_sidebar();
