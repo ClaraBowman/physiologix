@@ -15,12 +15,12 @@
   "license": "ISC",
   "homepage": "https://github.com/fleming-medical/physiologix",
   "devDependencies": {
-    "parcel": "^2.6.2"
+    "parcel": "^2.8.3"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.1.1",
-    "@popperjs/core": "^2.11.5",
+    "@fortawesome/fontawesome-free": "^6.2.1",
+    "@popperjs/core": "^2.11.6",
     "aos": "^2.3.4",
-    "bootstrap": "^5.2.0"
+    "bootstrap": "^5.2.3"
   }
 }
