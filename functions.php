@@ -88,6 +88,16 @@ add_action( 'widgets_init', function() {
     );
 } );
 
+/** 
+ * Add our theme shortcodes.
+ */
+require 'shortcodes.php';
+
+/** 
+ * Add our custom theme options to the customizer.
+ */
+require 'customizer.php';
+
 /**
  * Filter to add a 'li_class' argument to the wp_nav_menu function.
  */
@@ -102,11 +112,6 @@ add_filter('nav_menu_css_class', function( $classes, $item, $args ) {
  * Completely hide the admin bar from the front-end.
  */
 add_filter('show_admin_bar', '__return_false');
-
-/** 
- * Add our theme shortcodes.
- */
-require 'shortcodes.php';
 
 /**
  * Remove the injected WooCommerce sidebar and add it later ourselves.
